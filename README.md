@@ -68,12 +68,12 @@ Status Code	Description
 503	Error communicating with database
 If you get 200, you are done!
 
-Evaluation Criteria
+## Evaluation Criteria
 the candidate should not use frameworks like React, Angular, and Express, or bootstraps like create-react-app and angular cli. Libraries are allowed, just not frameworks.
-a reviewer should be able to clone this repository (e.g. from Github, Bitbucket)
-a reviewer should be able to run npm install and get all required dependencies
-a reviewer should be able to run npm start to run the application
-a reviewer should be able to see that calls are successful
+- a reviewer should be able to clone this repository (e.g. from Github, Bitbucket)
+- a reviewer should be able to run npm install and get all required dependencies
+- a reviewer should be able to run npm start to run the application
+- a reviewer should be able to see that calls are successful
 the work should be free of CORs errors when running on http://localhost
 Code is commented where appropriate
 Report any bugs or issues you find (there shouldn't be any, but who knows ;))
