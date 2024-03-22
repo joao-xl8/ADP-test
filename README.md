@@ -82,7 +82,7 @@ Code is commented where appropriate
 Report any bugs or issues you find (there shouldn't be any, but who knows ;))
 
 
-My development process:
+# My development process:
 
  - create the main program
  - add a main function
@@ -95,3 +95,26 @@ My development process:
   - add a post function to send data to the API
   - evaluate response
   - end main program
+
+# Commands to get the project, build and run
+
+Requirements: 
+-  [npm](https://www.npmjs.com/)
+-  [node](https://nodejs.org/en)
+-  [git](https://git-scm.com/downloads)
+
+To download the repo:
+```bash
+  git clone https://github.com/joaopaul167/ADP-test.git
+```
+
+To install all dependencies:
+```bash
+  npm i
+```
+
+To run the project:
+```bash
+  npm start
+```
+
