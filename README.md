@@ -74,6 +74,24 @@ the candidate should not use frameworks like React, Angular, and Express, or boo
 - a reviewer should be able to run npm install and get all required dependencies
 - a reviewer should be able to run npm start to run the application
 - a reviewer should be able to see that calls are successful
+  
 the work should be free of CORs errors when running on http://localhost
+
 Code is commented where appropriate
+
 Report any bugs or issues you find (there shouldn't be any, but who knows ;))
+
+
+My development process:
+
+ - create the main program
+ - add a main function
+ - add a get function to retrieve data from the API
+ - process data:
+    - get all the last years transactions
+    - create map to add total amout for each employee in that year
+    - get the highest one
+    - get all his transactions with type == 'alpha'
+  - add a post function to send data to the API
+  - evaluate response
+  - end main program
