@@ -58,10 +58,12 @@ async function makePostRequest(url, data) {
 async function main() {
     try {
         // Get task ID and transactions from the API
+        console.log("Fetching task from: https://interview.adpeai.com/api/v2/get-task")
         const { id, transactions } = await makeGetRequest(
             "https://interview.adpeai.com/api/v2/get-task"
         );
-        
+        console.log("Task fetched successfully.")
+
         // Filter transactions from last year using the date from each transaction
         // and the current year, making a filter 
         const lastYearTransactions = transactions.filter((transaction) => {
@@ -101,6 +103,8 @@ async function main() {
             (transaction) => transaction.transactionID
         );
 
+        console.log("Top earner transaction IDs:", transactionIDs);
+        console.log("Submitting task to: https://interview.adpeai.com/api/v2/submit-task")
         const response = await makePostRequest(
             "https://interview.adpeai.com/api/v2/submit-task",
             { id, result: transactionIDs }
