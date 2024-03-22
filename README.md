@@ -15,16 +15,17 @@ Create a simple JavaScript (nodejs) application that makes an HTTP GET request t
 https://interview.adpeai.com/api/v2/get-task
 
 This endpoint will provide you with an id and an array of transactions data.
-
+```json
 {
   "id":"81728ed3-25ff-473c-9491-4a2026dadd8c",
   "transactions": [
     // This will be an array of transactions
   ]
 }
+```
 Each transaction object within the array has the following shape (details may be different):
 
-  
+```json
 {
   "transactionID": "TX_691",
   "timeStamp": "2021-05-25T17:35:19.460Z",
@@ -40,6 +41,7 @@ Each transaction object within the array has the following shape (details may be
     "categoryCode": "red"
   }
 }
+```
 With this data:
 
 Get all the transactions of last year's top earner. This means find the employee with the highest sum total of amount within the prior calendar year. Prior calendar year means, if it is currently 2022, we want only to consider transactions in 2021.
@@ -51,11 +53,12 @@ https://interview.adpeai.com/api/v2/submit-task
 with a JSON POST body including the properties id and result.
 
 Body example:
-
+```json
 {
   "id": "81728ed3-25ff-473c-9491-4a2026dadd8c",
   "result": ["TX_002", "TX_003"]
 }
+```
 The submit-task endpoint will return as follows:
 
 Status Code	Description
